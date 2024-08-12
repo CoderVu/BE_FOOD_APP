@@ -1,4 +1,4 @@
-package com.example.BE_FOOD_APP.respository;
+package com.example.BE_FOOD_APP.respo.respository;
 
 import com.example.BE_FOOD_APP.model.Product;
 import org.springframework.data.domain.Pageable;

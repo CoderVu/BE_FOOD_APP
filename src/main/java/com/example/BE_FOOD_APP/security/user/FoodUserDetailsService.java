@@ -1,6 +1,6 @@
 package com.example.BE_FOOD_APP.security.user;
 
-import com.example.BE_FOOD_APP.respository.UserRepository;
+import com.example.BE_FOOD_APP.respo.respository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

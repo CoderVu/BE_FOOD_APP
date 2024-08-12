@@ -2,15 +2,14 @@ package com.example.BE_FOOD_APP.service;
 
 import com.example.BE_FOOD_APP.exception.UserAlreadyExistsException;
 import com.example.BE_FOOD_APP.model.Role;
-import com.example.BE_FOOD_APP.respository.RoleRepository;
-import com.example.BE_FOOD_APP.respository.UserRepository;
+import com.example.BE_FOOD_APP.respo.respository.RoleRepository;
+import com.example.BE_FOOD_APP.respo.respository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import com.example.BE_FOOD_APP.model.User;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.Collections;
-import java.util.List;
 import java.util.Optional;
 
 @Service

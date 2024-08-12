@@ -1,6 +1,6 @@
 package com.example.BE_FOOD_APP.service;
 
-import com.example.BE_FOOD_APP.dto.ProductResponse;
+import com.example.BE_FOOD_APP.respo.respose.ProductResponse;
 import com.example.BE_FOOD_APP.model.Product;
 
 import java.util.List;

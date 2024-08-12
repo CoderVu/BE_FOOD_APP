@@ -1,8 +1,8 @@
 package com.example.BE_FOOD_APP.service;
 
-import com.example.BE_FOOD_APP.dto.ProductResponse;
+import com.example.BE_FOOD_APP.respo.respose.ProductResponse;
 import com.example.BE_FOOD_APP.model.Product;
-import com.example.BE_FOOD_APP.respository.ProductRepository;
+import com.example.BE_FOOD_APP.respo.respository.ProductRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

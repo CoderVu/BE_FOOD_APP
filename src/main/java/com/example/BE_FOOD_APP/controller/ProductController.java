@@ -1,7 +1,6 @@
 package com.example.BE_FOOD_APP.controller;
 
-import com.example.BE_FOOD_APP.dto.ProductResponse;
-import com.example.BE_FOOD_APP.model.Product;
+import com.example.BE_FOOD_APP.respo.respose.ProductResponse;
 import com.example.BE_FOOD_APP.service.ProductService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -12,7 +11,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.sql.SQLException;
-import java.util.List;
 
 @RestController
 @RequiredArgsConstructor

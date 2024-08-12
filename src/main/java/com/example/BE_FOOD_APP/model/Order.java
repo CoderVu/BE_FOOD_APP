@@ -1,5 +1,6 @@
 package com.example.BE_FOOD_APP.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 
 import java.util.List;
@@ -18,7 +19,8 @@ public class Order {
     private String orderDate;
     private Double totalAmount;
     private String status;
-
+    private  String img;
+    @JsonIgnore
     @OneToMany(mappedBy = "order", cascade = CascadeType.ALL)
     private List<OrderItem> orderItems;
 
@@ -68,5 +70,11 @@ public class Order {
 
     public void setOrderItems(List<OrderItem> orderItems) {
         this.orderItems = orderItems;
+    }
+    public String getImg() {
+        return img;
+    }
+    public void setImg(String img) {
+        this.img = img;
     }
 }

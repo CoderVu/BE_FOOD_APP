@@ -57,6 +57,9 @@ public class WebSecurityConfig {
                 .exceptionHandling(exception -> exception.authenticationEntryPoint(jwtAuthEntryPoint))
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authorizeHttpRequests(auth -> auth
+                        .requestMatchers("/api/v1/order").permitAll()
+                        .requestMatchers("/api/v1/order/**").permitAll() // Allow access to products
+                        .requestMatchers("/api/v1/auth/**").permitAll() // Allow access to auth endpoints
                         .requestMatchers("/api/v1/uploads/images/**").permitAll() // Allow access to images
                         .requestMatchers("/api/v1/**").permitAll() // Allow access to other API endpoints
                         .anyRequest().authenticated()
